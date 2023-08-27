@@ -6,14 +6,3 @@ command = "npm install -g autoprefixer postcss postcss-cli && hugo --gc --minify
 HUGO_VERSION = "0.76.4"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-
-[[headers]]
-  # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
-
-[[redirects]]
-  from = "/api/*"
-  to = "https://api.example.com/:splat"
-  status = 200
